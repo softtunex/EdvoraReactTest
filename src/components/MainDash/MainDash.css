@@ -1,0 +1,44 @@
+.Dashboard{
+    display: grid;
+    grid-template-columns: auto 20rem;
+    gap:16px;
+}
+.MainDash{
+    /* padding-top: 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .Dashboard{
+        grid-template-columns: 1fr;
+    }
+    .cardDash{
+        width: 100%;
+        height: 60vh;
+    }
+    .tableDash{
+        width: 100%;
+        height: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 768px)
+{
+    .cardDash{
+        width: 90vw;
+        height: 60vh;
+    }
+    .tableDash{
+        width: 90vw;
+
+        height: 50%;
+    }
+    .MainDash{
+        
+        margin: 0 auto;
+    }
+}
