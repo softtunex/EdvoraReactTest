@@ -12,7 +12,7 @@ const Cards = (props) => {
      
           <div className="parentContainer">
             <Card
-              title="Total Products price"
+              title="Products price"
               color={{
                 backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
                 boxShadow: "0px 10px 20px 0px #e0c6f5",
@@ -42,7 +42,7 @@ const Cards = (props) => {
               ]}
             />
             <Card
-              title="Total Quantity Ordered"
+              title="Quantity Ordered"
               color={{
                 backGround:
                   "linear-gradient(rgb(248, 212, 154) -146.42%, rgb(255 202 113) -46.42%)",
