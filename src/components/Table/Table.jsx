@@ -35,7 +35,6 @@ export default function BasicTable(props) {
                   <TableCell align="left">{new Date(parseInt(order.order_date)).toLocaleDateString("en-US")
 }</TableCell>
                   
-                  <TableCell align="left" className="Details">Details</TableCell>
                 </TableRow>
         
       );
@@ -55,7 +54,6 @@ export default function BasicTable(props) {
                 <TableCell align="left">Product bought</TableCell>
                 <TableCell align="left">Quantity</TableCell>
                 <TableCell align="left">Date</TableCell>
-                <TableCell align="left"></TableCell>
               </TableRow>}
             </TableHead>
             <TableBody>

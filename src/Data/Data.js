@@ -6,8 +6,6 @@ import {
   UilPackage,
 } from "@iconscout/react-unicons";
 
-// Analytics Cards imports
-import { UilUsdSquare, UilMoneyWithdrawal } from "@iconscout/react-unicons";
 
 
 // Sidebar Data

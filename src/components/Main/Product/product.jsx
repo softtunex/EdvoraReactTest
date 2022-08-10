@@ -34,7 +34,7 @@ function Products(props) {
               </Table>
               </TableContainer>
         
-      
+              </div>
       <ReactPaginate
         previousLabel={"Previous"}
         nextLabel={"Next"}
@@ -46,7 +46,7 @@ function Products(props) {
         disabledClassName={"paginationDisabled"}
         activeClassName={"paginationActive"}
       />
-    </div>
+    
     </div>
   );
 }
