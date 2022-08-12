@@ -12,26 +12,25 @@ import Profile from "./imgs/profile.png"
 
 
 function App() {
-  const [orders, setOrders] = useState([]);
-  const [users, setUsers] = useState([]);
-  const [products, setProducts] = useState([]);
+  const [orders, setOrders] = useState(()=>[]);
+  const [users, setUsers] = useState(()=>[]);
+  const [products, setProducts] = useState(()=>[]);
   const [pageNumber, setPageNumber] = useState(0);
 
   useEffect(()=>{
     fetch("https://assessment.api.vweb.app/orders")
         .then(res=>res.json())
         .then(data=>setOrders(data))
-},[])
-  useEffect(()=>{
-    fetch("https://assessment.api.vweb.app/users")
+
+        fetch("https://assessment.api.vweb.app/users")
         .then(res=>res.json())
         .then(data=>setUsers(data))
-},[])
-  useEffect(()=>{
-    fetch("https://assessment.api.vweb.app/products")
+        
+        fetch("https://assessment.api.vweb.app/products")
         .then(res=>res.json())
         .then(data=>setProducts(data))
 },[])
+  
   const PagePerPage = 10;
   const pagesVisited = pageNumber * PagePerPage;  
 
